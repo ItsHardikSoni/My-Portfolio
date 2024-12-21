@@ -1,29 +1,29 @@
-/* General Reset */
-html, body {
+html,
+body {
     height: 100%;
     overflow-x: hidden;
-    scroll-behavior: smooth;
-  }
-  
-  body {
+    scroll-behavior: smooth
+}
+
+body {
     overflow-y: scroll;
-    -webkit-overflow-scrolling: touch;
-  }
-  
-  * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Arial', sans-serif;
-      transition: all 0.3s ease-out;
-  }
-  
-  /* Smooth scrolling for modern browsers */
-  @media screen and (prefers-reduced-motion: no-preference) {
+    -webkit-overflow-scrolling: touch
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    transition: all .3s ease-out
+}
+
+@media screen and (prefers-reduced-motion:no-preference) {
     html {
-      scroll-behavior: smooth;
+        scroll-behavior: smooth
     }
-  }
+}
+
 body {
     background: linear-gradient(-45deg, #0d021f, #2c0f58, #6a1b9a, #200142);
     background-size: 400% 400%;
@@ -32,25 +32,23 @@ body {
     text-align: center;
     line-height: 1.6;
     overflow-x: hidden;
-    position: relative;
+    position: relative
 }
 
-/* Background Animation */
 @keyframes gradientBG {
     0% {
-        background-position: 0% 50%;
+        background-position: 0% 50%
     }
 
     50% {
-        background-position: 100% 50%;
+        background-position: 100% 50%
     }
 
     100% {
-        background-position: 0% 50%;
+        background-position: 0% 50%
     }
 }
 
-/* Hero Section */
 .hero {
     display: flex;
     flex-direction: column;
@@ -60,170 +58,162 @@ body {
     position: relative;
     z-index: 2;
     height: auto;
-    text-align: center;
+    text-align: center
 }
 
 .hello {
     font-size: 1.2rem;
-    color: #aaa;
+    color: #aaa
 }
 
 .name {
     color: #e74c3c;
-    /* Purple Color */
-    font-weight: bold;
-    transition: color 0.5s ease-in-out;
+    font-weight: 700;
+    transition: color .5s ease-in-out
 }
 
 .name:hover {
-    color: #e74c3c;
-    /* Red on Hover */
+    color: #e74c3c
 }
 
 .title {
     font-size: 3rem;
     line-height: 1.3;
     margin: 10px 0;
-    opacity: 0.9;
-    transition: transform 0.3s ease-in-out;
+    opacity: .9;
+    transition: transform .3s ease-in-out
 }
 
 .title:hover {
-    transform: scale(1.05);
+    transform: scale(1.05)
 }
 
 .cover {
     color: #9b59b6;
-    text-decoration: underline;
+    text-decoration: underline
 }
 
 .subtitle {
     font-size: 1.1rem;
     color: #bbb;
-    animation: fadeInUp 2s ease;
+    animation: fadeInUp 2s ease
 }
 
-/* Floating Stars Animation */
 .star {
     position: absolute;
     width: 4px;
     height: 4px;
     background-color: #fff;
     border-radius: 50%;
-    opacity: 0.8;
-    animation: twinkle 5s infinite ease-in-out;
+    opacity: .8;
+    animation: twinkle 5s infinite ease-in-out
 }
 
 @keyframes twinkle {
 
     0%,
     100% {
-        opacity: 0.2;
-        transform: scale(1);
+        opacity: .2;
+        transform: scale(1)
     }
 
     50% {
-        opacity: 0.8;
-        transform: scale(1.5);
+        opacity: .8;
+        transform: scale(1.5)
     }
 }
 
-/* Emoji */
 .emoji {
-    margin: 20px 0;
+    margin: 20px 0
 }
 
 .emoji-img {
     width: 60%;
-    animation: glow 2s infinite alternate;
+    animation: glow 2s infinite alternate
 }
 
 @keyframes glow {
     0% {
-        filter: drop-shadow(0 0 5px #9b59b6);
+        filter: drop-shadow(0 0 5px #9b59b6)
     }
 
     100% {
-        filter: drop-shadow(0 0 20px #9b59b6);
+        filter: drop-shadow(0 0 20px #9b59b6)
     }
 }
 
-/* Description Section */
 .description {
     margin-top: 10px;
-    opacity: 0.9;
+    opacity: .9
 }
 
 h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    transition: color 0.3s ease-in-out;
+    transition: color .3s ease-in-out
 }
 
 .description a {
     color: #e74c3c;
     text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease-in-out;
+    font-weight: 700;
+    transition: color .3s ease-in-out
 }
 
 .details {
     font-size: 1rem;
     color: #ccc;
     max-width: 600px;
-    margin: 10px auto;
+    margin: 10px auto
 }
 
-/* Floating Animation for Sections */
 .floating {
-    animation: float 4s ease-in-out infinite;
+    animation: float 4s ease-in-out infinite
 }
 
 @keyframes float {
     0% {
-        transform: translateY(0);
+        transform: translateY(0)
     }
 
     50% {
-        transform: translateY(-15px);
+        transform: translateY(-15px)
     }
 
     100% {
-        transform: translateY(0);
+        transform: translateY(0)
     }
 }
 
-/* Dovnload CV*/
-
 .cv-button a {
     text-decoration: none;
-    color: white;
+    color: #fff
 }
 
 .cv-download {
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center
 }
 
 .cv-button {
     font-size: 1em;
-    padding: 0.6em 0.8em;
-    border-radius: 0.9em;
+    padding: .6em .8em;
+    border-radius: .9em;
     border: none;
     background-color: #000;
     color: #fff;
     cursor: pointer;
-    box-shadow: 2px 2px 3px #000000b4;
+    box-shadow: 2px 2px 3px #000000b4
 }
 
 .cv-container {
     position: relative;
     padding: 3px;
     background: linear-gradient(90deg, #03a9f4, #f441a5);
-    border-radius: 0.9em;
-    transition: all 0.4s ease;
+    border-radius: .9em;
+    transition: all .4s ease
 }
 
 .cv-container::before {
@@ -231,23 +221,21 @@ h2 {
     position: absolute;
     inset: 0;
     margin: auto;
-    border-radius: 0.9em;
+    border-radius: .9em;
     z-index: -10;
     filter: blur(0);
-    transition: filter 0.4s ease;
+    transition: filter .4s ease
 }
 
 .cv-container:hover::before {
     background: linear-gradient(90deg, #03a9f4, #f441a5);
-    filter: blur(1.2em);
+    filter: blur(1.2em)
 }
 
 .cv-container:active::before {
-    filter: blur(0.2em);
+    filter: blur(.2em)
 }
 
-
-/* Social Media Icon */
 .card-social {
     width: 100%;
     background-color: transparent;
@@ -255,7 +243,7 @@ h2 {
     align-items: center;
     justify-content: center;
     padding: 10px;
-    gap: 30px;
+    gap: 30px
 }
 
 .Btn {
@@ -269,7 +257,7 @@ h2 {
     position: relative;
     border-radius: 7px;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all .3s
 }
 
 .imgContainer {
@@ -280,21 +268,21 @@ h2 {
     justify-content: center;
     background-color: transparent;
     backdrop-filter: blur(0px);
-    letter-spacing: 0.8px;
+    letter-spacing: .8px;
     border-radius: 10px;
-    transition: all 0.3s;
-    border: 1px solid rgba(156, 156, 156, 0.466);
+    transition: all .3s;
+    border: 1px solid rgba(156, 156, 156, 0.466)
 }
 
 .imgContainer img {
     width: 70%;
     height: 70%;
     filter: invert(100%);
-    object-fit: contain;
+    object-fit: contain
 }
 
 .imgContainer a {
-    display: contents;
+    display: contents
 }
 
 .BG1 {
@@ -310,13 +298,12 @@ h2 {
     background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
-    transition-duration: 0.3s;
+    transition-duration: .3s
 }
 
 .Btn:hover .BG1 {
     transform: rotate(35deg);
-    transform-origin: bottom;
-
+    transform-origin: bottom
 }
 
 .BG2 {
@@ -324,16 +311,16 @@ h2 {
     content: "";
     width: 100%;
     height: 100%;
-    background: black;
+    background: #000;
     z-index: -1;
     border-radius: 10px;
     pointer-events: none;
-    transition: all 0.3s;
+    transition: all .3s
 }
 
 .Btn:hover .BG2 {
     transform: rotate(35deg);
-    transform-origin: bottom;
+    transform-origin: bottom
 }
 
 .BG3 {
@@ -345,12 +332,12 @@ h2 {
     z-index: -1;
     border-radius: 10px;
     pointer-events: none;
-    transition: all 0.3s;
+    transition: all .3s
 }
 
 .Btn:hover .BG3 {
     transform: rotate(35deg);
-    transform-origin: bottom;
+    transform-origin: bottom
 }
 
 .BG4 {
@@ -362,12 +349,12 @@ h2 {
     z-index: -1;
     border-radius: 10px;
     pointer-events: none;
-    transition: all 0.3s;
+    transition: all .3s
 }
 
 .Btn:hover .BG4 {
     transform: rotate(35deg);
-    transform-origin: bottom;
+    transform-origin: bottom
 }
 
 .BG5 {
@@ -383,20 +370,19 @@ h2 {
     z-index: -1;
     border-radius: 10px;
     pointer-events: none;
-    transition: all 0.3s;
+    transition: all .3s
 }
 
 .Btn:hover .BG5 {
     transform: rotate(35deg);
-    transform-origin: bottom;
+    transform-origin: bottom
 }
 
 .Btn:hover .imgContainer {
     background-color: rgba(156, 156, 156, 0.466);
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px)
 }
 
-/* Background Overlay */
 .overlay {
     position: absolute;
     top: 0;
@@ -404,23 +390,21 @@ h2 {
     width: 100%;
     height: 100%;
     background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.3), transparent);
-    z-index: 1;
+    z-index: 1
 }
 
-/* Fade-In Animation */
 @keyframes fadeInUp {
     0% {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(20px)
     }
 
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(0)
     }
 }
 
-/* Interactive Button */
 .interactive-btn {
     display: inline-block;
     margin-top: 20px;
@@ -432,23 +416,22 @@ h2 {
     cursor: pointer;
     font-size: 1rem;
     box-shadow: 0 4px 15px rgba(107, 65, 186, 0.5);
-    transition: all 0.3s ease-in-out;
+    transition: all .3s ease-in-out
 }
 
 .interactive-btn:hover {
     background: #6a1b9a;
     transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(107, 65, 186, 0.7);
+    box-shadow: 0 6px 20px rgba(107, 65, 186, 0.7)
 }
 
-/* Background Stars */
 .background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -1
 }
 
 .star {
@@ -457,73 +440,69 @@ h2 {
     height: 4px;
     background-color: #fff;
     border-radius: 50%;
-    opacity: 0.8;
-    animation: twinkle 5s infinite ease-in-out;
+    opacity: .8;
+    animation: twinkle 5s infinite ease-in-out
 }
 
 @keyframes twinkle {
 
     0%,
     100% {
-        opacity: 0.2;
-        transform: scale(1);
+        opacity: .2;
+        transform: scale(1)
     }
 
     50% {
-        opacity: 0.8;
-        transform: scale(1.5);
+        opacity: .8;
+        transform: scale(1.5)
     }
 }
 
 .hero h1 {
     font-size: 2.5rem;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
-/* Cards Container */
 .cards-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     width: 80%;
-    max-width: 1200px;
+    max-width: 1200px
 }
 
-/* Glassmorphism Effect on Cards */
 .card {
     background: rgba(255, 255, 255, 0.1);
-    /* Transparent white */
     border-radius: 15px;
     padding: 20px;
     backdrop-filter: blur(10px);
-    /* Frosted glass effect */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    transition: transform 0.3s ease-in-out;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform .3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.2)
 }
 
 .card:hover {
     transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.15)
 }
 
 .card img.icon {
     width: 70px;
     height: 70px;
     object-fit: contain;
-    margin-bottom: 15px;
+    margin-bottom: 15px
 }
 
 .card h3 {
     font-size: 1.4rem;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 .card p {
-    font-size: 0.9rem;
+    font-size: .9rem;
     color: #ddd;
-    margin-bottom: 15px;
+    margin-bottom: 15px
 }
 
 .card button {
@@ -533,59 +512,55 @@ h2 {
     border-radius: 20px;
     padding: 10px 20px;
     cursor: pointer;
-    font-weight: bold;
-    transition: background 0.3s ease;
+    font-weight: 700;
+    transition: background .3s ease
 }
 
 .card button:hover {
-    background: #6a1b9a;
+    background: #6a1b9a
 }
 
-/* Main Container */
 .main-container {
     text-align: center;
     position: relative;
-    padding: 20px;
+    padding: 20px
 }
 
-/* Header Styling */
 .main-title {
     font-size: 2.5rem;
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 5px
 }
 
 .title-highlight {
-    color: #a87eff;
+    color: #a87eff
 }
 
 .title-subtext {
     font-size: 1rem;
-    opacity: 0.8;
-    margin-bottom: 2rem;
+    opacity: .8;
+    margin-bottom: 2rem
 }
 
-/* Tech Icons */
 .tech-icons {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
     margin-bottom: 3rem;
-    animation: glow 2s infinite alternate;
+    animation: glow 2s infinite alternate
 }
 
 .tech-icons img {
     width: 50px;
     height: 50px;
     filter: drop-shadow(0 0 10px #9f6eff);
-    transition: transform 0.3s ease;
+    transition: transform .3s ease
 }
 
 .tech-icons img:hover {
-    transform: scale(1.2);
+    transform: scale(1.2)
 }
 
-/* Rotating Circle */
 .rotating-glow-circle {
     position: relative;
     width: 200px;
@@ -593,30 +568,28 @@ h2 {
     border: 2px solid #9f6eff;
     border-radius: 50%;
     animation: rotate 10s linear infinite;
-    /* Continuous 360 rotation */
     box-shadow: 0 0 30px 15px rgba(159, 110, 255, 0.3);
     margin: auto;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
 .centered-logo {
     font-size: 3rem;
-    font-weight: bold;
-    color: #ffffff;
+    font-weight: 700;
+    color: #fff;
     text-shadow: 0 0 10px #9f6eff;
-    animation: glow 0.5s infinite alternate;
+    animation: glow .5s infinite alternate
 }
 
-/* Rotating Animation */
 @keyframes rotate {
     from {
-        transform: rotate(0deg);
+        transform: rotate(0deg)
     }
 
     to {
-        transform: rotate(360deg);
+        transform: rotate(360deg)
     }
 }
 
@@ -624,69 +597,58 @@ h2 {
     display: block;
     flex-direction: column;
     gap: 80px;
-    padding: 20px;
+    padding: 20px
 }
 
 .project.project-1 {
-    padding: 20px;
+    padding: 20px
 }
 
-/* Project Structure */
 .project {
     display: flex;
     align-items: center;
     position: relative;
-    height: 300px;
+    height: 300px
 }
 
-/* Image Section */
 .project-image {
     flex: 1;
     width: 100%;
-    /* Make the container span the full width */
     height: 100%;
-    /* Set a fixed height or use a percentage */
     position: relative;
     animation: glow 2s infinite alternate;
     border-radius: 10px;
-    overflow: hidden;
-    /* Ensure no overflow outside the container */
+    overflow: hidden
 }
 
 .project-1 .project-image {
-    margin-right: -60px;
-    /* Overlap Effect */
+    margin-right: -60px
 }
 
 .project-2 .project-image {
-    margin-left: -60px;
-    /* Overlap Effect */
+    margin-left: -60px
 }
 
 .project-1-image {
     object-fit: fill;
-    border-radius: 10px;
+    border-radius: 10px
 }
 
 .project-2-image {
     object-fit: contain;
-    border-radius: 10px;
+    border-radius: 10px
 }
 
-/* Image Overlay for Background Effect */
 .image-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    /* Make the image fill the container's width */
     height: 100%;
-    /* Make the image fill the container's height */
     padding: 5px;
-    background: linear-gradient(135deg, rgba(109, 35, 182, 0.8), rgba(41, 4, 75, 0.8));
+    background: linear-gradient(135deg, rgba(109, 35, 182, 0.8), rgba(41, 4, 75, 0.8))
 }
 
-/* Content Section */
 .project-content {
     flex: 1;
     display: flex;
@@ -696,72 +658,64 @@ h2 {
     z-index: 2;
     padding: 20px 30px;
     background: rgba(255, 255, 255, 0.1);
-    /* Glass Background */
     backdrop-filter: blur(10px);
     border-radius: 10px;
-    margin: 20px;
+    margin: 20px
 }
 
 .project-title {
     font-size: 28px;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 15px;
-    color: #c57eff;
+    color: #c57eff
 }
 
 .project-description {
     font-size: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
-/* Tool Icons */
 .tool-icons {
     display: flex;
-    gap: 10px;
+    gap: 10px
 }
 
 .tool-icons img {
     width: 30px;
     height: 30px;
     border-radius: 30%;
-    background: #ffffff;
+    background: #fff;
     padding: 3px;
-    object-fit: contain;
+    object-fit: contain
 }
 
-/* Reverse Layout for Project 2 */
 .project-2 {
     flex-direction: row-reverse;
-    padding: 20px;
+    padding: 20px
 }
 
-/* Section Title */
 .achievements-title {
     text-align: center;
     font-size: 2.5rem;
-    margin: 20px 0;
+    margin: 20px 0
 }
 
 .title .highlight {
     color: #b993ff;
-    /* Purple color for 'proud achievements' */
-    font-weight: bold;
+    font-weight: 700
 }
 
-/* Achievements Container */
 .achievements-container {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 20px;
+    padding: 20px
 }
 
-/* Achievements Section */
 .achievements-section {
-    padding: 20px;
+    padding: 20px
 }
 
-/* Card Container */
 .card-flip {
     position: relative;
     width: 300px;
@@ -774,26 +728,21 @@ h2 {
     overflow: hidden;
     perspective: 1000px;
     box-shadow: 0 0 0 5px #ffffff80;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all .6s cubic-bezier(0.175, 0.885, 0.32, 1.275)
 }
 
-/* Card Image */
 .card__image {
     width: 100%;
-    /* Adjust the size as needed */
     height: 100%;
     object-fit: contain;
-    /* Ensures the image scales correctly */
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all .6s cubic-bezier(0.175, 0.885, 0.32, 1.275)
 }
 
-/* Card Hover Effect */
 .card-flip:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2)
 }
 
-/* Card Content */
 .card__content {
     position: absolute;
     top: 0;
@@ -805,68 +754,56 @@ h2 {
     background-color: #f2f2f2;
     transform: rotateX(-90deg);
     transform-origin: bottom;
-    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition: all .6s cubic-bezier(0.175, 0.885, 0.32, 1.275)
 }
 
-/* Card Content Hover Effect */
 .card-flip:hover .card__content {
-    transform: rotateX(0deg);
+    transform: rotateX(0deg)
 }
 
-/* Card Title */
 .card__title {
     margin: 0;
     font-size: 24px;
     color: #333;
-    font-weight: 700;
+    font-weight: 700
 }
 
-/* Card Image Hover Effect */
 .card-flip:hover .card__image {
-    transform: scale(0);
+    transform: scale(0)
 }
 
-/* Card Description */
 .card__description {
     margin: 10px 0 0;
     font-size: 14px;
     color: #777;
-    line-height: 1.4;
+    line-height: 1.4
 }
 
-
-/* Contact Section - Centering All Content */
 .contact-section {
     display: flex;
     flex-direction: column;
-    /* Stack items vertically */
     justify-content: center;
-    /* Center vertically */
     align-items: center;
-    /* Center horizontally */
     text-align: center;
-    padding: 20px;
+    padding: 20px
 }
 
-/* Heading Styles */
 .contact-heading {
     font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-weight: 700;
+    margin-bottom: 10px
 }
 
 .contact-heading .highlight {
-    color: #b48bf5;
+    color: #b48bf5
 }
 
-/* Subtext */
 .contact-subtext {
     font-size: 1rem;
     color: #aaa;
-    margin-bottom: 30px;
+    margin-bottom: 30px
 }
 
-/* CTA Button */
 .cta-button button {
     padding: 10px 20px;
     font-size: 1rem;
@@ -875,25 +812,20 @@ h2 {
     background: transparent;
     border-radius: 8px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all .3s ease
 }
 
 .cta-button button:hover {
     background-color: #b48bf5;
     color: #000;
-    transform: scale(1.05);
+    transform: scale(1.05)
 }
 
-/* Icon Container - Fixed Bottom Center */
 .icon-container {
     position: fixed;
-    /* Fix the container to the viewport */
     bottom: 20px;
-    /* 20px from the bottom */
     left: 50%;
-    /* Move to the center horizontally */
     transform: translateX(-50%);
-    /* Center the container */
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -904,11 +836,9 @@ h2 {
     padding: 10px;
     border-radius: 20px;
     z-index: 1000;
-    /* Ensure it's above other content */
-    max-width: 100%;
+    max-width: 100%
 }
 
-/* Icon Card - Individual Icons */
 .icon-card {
     position: relative;
     width: 40px;
@@ -920,26 +850,25 @@ h2 {
     background-color: rgba(0, 0, 0, 0.1);
     cursor: pointer;
     backdrop-filter: blur(8px);
-    transition: all 0.3s ease-in-out;
+    transition: all .3s ease-in-out
 }
 
 .icon-card:hover {
     background-color: rgba(255, 255, 255, 0.3);
-    transform: scale(1.1);
+    transform: scale(1.1)
 }
 
 .icon-card img {
     width: 30px;
     height: 30px;
     object-fit: contain;
-    filter: invert(100%);
+    filter: invert(100%)
 }
 
 .icon-card a {
-    display: contents;
+    display: contents
 }
 
-/* Tooltip for Icon Names */
 .icon-card::after {
     content: attr(data-title);
     position: absolute;
@@ -953,278 +882,318 @@ h2 {
     border-radius: 6px;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease-in-out;
-    white-space: nowrap;
+    transition: all .3s ease-in-out;
+    white-space: nowrap
 }
 
 .icon-card:hover::after {
     opacity: 1;
     visibility: visible;
-    bottom: 50px;
+    bottom: 50px
 }
 
-/* Footer */
 .footer {
     display: flex;
     margin: 40px;
-    font-size: 0.9rem;
-    color: #666;
+    font-size: .9rem;
+    color: #666
 }
 
-/* Responsive Layout */
-@media (max-width: 1200px) {
+@media (max-width:1200px) {
     .cards-container {
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        gap: 20px
     }
+
     .project {
         flex-direction: column;
-        height: auto;
+        height: auto
     }
+
     .project-content {
-        margin: 10px 0;
+        margin: 10px 0
     }
+
     .project-image {
         margin: 0 auto;
-        width: 90%;
+        width: 90%
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width:768px) {
     body {
-        font-size: 90%;
+        font-size: 90%
     }
+
     .cards-container {
         grid-template-columns: 1fr;
-        gap: 15px;
+        gap: 15px
     }
 
-
     .main-title {
-        font-size: 2rem;
+        font-size: 2rem
     }
 
     .title-subtext {
-        font-size: 0.9rem;
+        font-size: .9rem
     }
 
     .tech-icons img {
-        width: 40px; /* Reduced size for tablets */
-        height: 40px;
+        width: 40px;
+        height: 40px
     }
 
     .rotating-glow-circle {
-        width: 150px; /* Adjusted size */
-        height: 150px;
+        width: 150px;
+        height: 150px
     }
 
     .centered-logo {
-        font-size: 2.5rem;
+        font-size: 2.5rem
     }
-
 
     .title {
-        font-size: 2rem;
+        font-size: 2rem
     }
+
     .subtitle {
-        font-size: 1rem;
+        font-size: 1rem
     }
+
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2rem
     }
+
     .project {
-        flex-direction: column;
+        flex-direction: column
     }
+
     .project-content {
-        padding: 15px;
+        padding: 15px
     }
+
     .project-image {
         width: 100%;
-        height: auto;
+        height: auto
     }
+
     .description h2 {
-        font-size: 1.5rem;
+        font-size: 1.5rem
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width:576px) {
     .hero {
-        padding: 5px;
+        padding: 5px
     }
+
     .cv-button {
-        font-size: 0.8em;
-        padding: 0.4em;
+        font-size: .8em;
+        padding: .4em
     }
+
     .tech-icons img {
         width: 35px;
-        height: 35px;
+        height: 35px
     }
+
     .interactive-btn {
         padding: 6px 12px;
-        font-size: 0.8rem;
+        font-size: .8rem
     }
+
     .card {
         width: 95%;
-        margin: 0 auto;
+        margin: 0 auto
     }
+
     .cv-container {
-        padding: 1px;
+        padding: 1px
     }
+
     .main-title {
-        font-size: 1.8rem;
+        font-size: 1.8rem
     }
+
     .title-subtext {
-        font-size: 0.8rem;
+        font-size: .8rem
     }
+
     .achievements-container {
         flex-direction: column;
-        gap: 10px;
+        gap: 10px
+    }
+}
+
+@media (max-width:1024px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+        width: 90%
     }
 
+    .tech-icons {
+        flex-wrap: wrap
+    }
+
+    .project {
+        flex-direction: column;
+        height: auto
+    }
+
+    .project-image {
+        margin: 0 !important;
+        width: 100%
+    }
+
+    .project-content {
+        width: 100%;
+        margin: 20px 0
+    }
 }
 
-@media (max-width: 1024px) {
-  .cards-container {
-    grid-template-columns: 1fr;
-    width: 90%;
-  }
-  .tech-icons {
-    flex-wrap: wrap;
-  }
-  .project {
-    flex-direction: column;
-    height: auto;
-  }
-  .project-image {
-    margin: 0 !important;
-    width: 100%;
-  }
-  .project-content {
-    width: 100%;
-    margin: 20px 0;
-  }
+@media (max-width:768px) {
+    .hero {
+        padding: 10px
+    }
+
+    .title {
+        font-size: 2.5rem
+    }
+
+    .subtitle {
+        font-size: 1rem
+    }
+
+    .description {
+        padding: 0 20px
+    }
+
+    .card-social {
+        flex-wrap: wrap
+    }
+
+    .achievements-container {
+        flex-direction: column
+    }
+
+    .card-flip {
+        width: 90%;
+        margin: 10px auto
+    }
+
+    .icon-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 5px
+    }
 }
 
-@media (max-width: 768px) {
-  .hero {
-    padding: 10px;
-  }
-  .title {
-    font-size: 2.5rem;
-  }
-  .subtitle {
-    font-size: 1rem;
-  }
-  .emoji-img {
-    width: 80%;
-  }
-  .description {
-    padding: 0 20px;
-  }
-  .card-social {
-    flex-wrap: wrap;
-  }
-  .achievements-container {
-    flex-direction: column;
-  }
-  .card-flip {
-    width: 90%;
-    margin: 10px auto;
-  }
-  .icon-container {
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 5px;
-  }
+@media (max-width:480px) {
+    .title {
+        font-size: 2rem
+    }
+
+    .subtitle {
+        font-size: .9rem
+    }
+
+    .description h2 {
+        font-size: 1.5rem
+    }
+
+    .details {
+        font-size: .9rem
+    }
+
+    .tech-icons img {
+        width: 40px;
+        height: 40px
+    }
+
+    .rotating-glow-circle {
+        width: 150px;
+        height: 150px
+    }
+
+    .project-title {
+        font-size: 1.5rem
+    }
+
+    .project-description {
+        font-size: .9rem
+    }
+
+    .tool-icons img {
+        width: 25px;
+        height: 25px
+    }
+
+    .icon-card {
+        width: 35px;
+        height: 35px
+    }
+
+    .icon-card img {
+        width: 25px;
+        height: 25px
+    }
 }
 
-@media (max-width: 480px) {
-  .title {
-    font-size: 2rem;
-  }
-  .subtitle {
-    font-size: 0.9rem;
-  }
-  .emoji-img {
-    width: 90%;
-  }
-  .description h2 {
-    font-size: 1.5rem;
-  }
-  .details {
-    font-size: 0.9rem;
-  }
-  .tech-icons img {
-    width: 40px;
-    height: 40px;
-  }
-  .rotating-glow-circle {
-    width: 150px;
-    height: 150px;
-  }
-  .project-title {
-    font-size: 1.5rem;
-  }
-  .project-description {
-    font-size: 0.9rem;
-  }
-  .tool-icons img {
-    width: 25px;
-    height: 25px;
-  }
-  .icon-card {
-    width: 35px;
-    height: 35px;
-  }
-  .icon-card img {
-    width: 25px;
-    height: 25px;
-  }
-}
+@media (max-width:320px) {
+    .title {
+        font-size: 1.8rem
+    }
 
-@media (max-width: 320px) {
-  .title {
-    font-size: 1.8rem;
-  }
-  .subtitle {
-    font-size: 0.8rem;
-  }
-  .emoji-img {
-    width: 100%;
-  }
-  .description h2 {
-    font-size: 1.3rem;
-  }
-  .details {
-    font-size: 0.8rem;
-  }
-  .tech-icons img {
-    width: 30px;
-    height: 30px;
-  }
-  .rotating-glow-circle {
-    width: 120px;
-    height: 120px;
-  }
-  .centered-logo {
-    font-size: 2rem;
-  }
-  .project-title {
-    font-size: 1.3rem;
-  }
-  .project-description {
-    font-size: 0.8rem;
-  }
-  .tool-icons img {
-    width: 20px;
-    height: 20px;
-  }
-  .icon-card {
-    width: 30px;
-    height: 30px;
-  }
-  .icon-card img {
-    width: 20px;
-    height: 20px;
-  }
+    .subtitle {
+        font-size: .8rem
+    }
+
+    .emoji-img {
+        width: 100%
+    }
+
+    .description h2 {
+        font-size: 1.3rem
+    }
+
+    .details {
+        font-size: .8rem
+    }
+
+    .tech-icons img {
+        width: 30px;
+        height: 30px
+    }
+
+    .rotating-glow-circle {
+        width: 120px;
+        height: 120px
+    }
+
+    .centered-logo {
+        font-size: 2rem
+    }
+
+    .project-title {
+        font-size: 1.3rem
+    }
+
+    .project-description {
+        font-size: .8rem
+    }
+
+    .tool-icons img {
+        width: 20px;
+        height: 20px
+    }
+
+    .icon-card {
+        width: 30px;
+        height: 30px
+    }
+
+    .icon-card img {
+        width: 20px;
+        height: 20px
+    }
 }
