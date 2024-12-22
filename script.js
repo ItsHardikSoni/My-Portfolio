@@ -73,20 +73,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
-function smoothScroll(target) {
-  const element = document.querySelector(target);
-  if (element) {
-      element.scrollIntoView({
-          behavior: 'smooth',
-          block: 'start'
-      });
-  }
-}
-
-document.querySelectorAll('.icon-container a').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-      const href = this.getAttribute('href');
-      smoothScroll(href);
-  });
-});

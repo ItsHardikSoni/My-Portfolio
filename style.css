@@ -242,7 +242,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 20px;
     gap: 30px
 }
 
@@ -407,7 +407,7 @@ h2 {
 
 .interactive-btn {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px 20px;
     background: #9b59b6;
     color: #fff;
@@ -601,7 +601,7 @@ h2 {
 }
 
 .project.project-1 {
-    padding: 20px
+    padding: 10px
 }
 
 .project {
@@ -691,7 +691,7 @@ h2 {
 
 .project-2 {
     flex-direction: row-reverse;
-    padding: 20px
+    padding: 10px
 }
 
 .achievements-title {
@@ -709,7 +709,7 @@ h2 {
     display: flex;
     justify-content: center;
     gap: 20px;
-    padding: 20px
+    padding: 10px
 }
 
 .achievements-section {
@@ -801,7 +801,7 @@ h2 {
 .contact-subtext {
     font-size: 1rem;
     color: #aaa;
-    margin-bottom: 30px
+    margin-bottom: 20px
 }
 
 .cta-button button {
@@ -927,7 +927,7 @@ h2 {
 
     .cards-container {
         grid-template-columns: 1fr;
-        gap: 15px
+        gap: 20px
     }
 
     .main-title {
@@ -988,8 +988,7 @@ h2 {
     }
 
     .cv-button {
-        font-size: .8em;
-        padding: .4em
+        font-size: 1em;
     }
 
     .tech-icons img {
@@ -1008,7 +1007,7 @@ h2 {
     }
 
     .cv-container {
-        padding: 1px
+        padding: 3px
     }
 
     .main-title {
@@ -1047,13 +1046,13 @@ h2 {
 
     .project-content {
         width: 100%;
-        margin: 20px 0
+        margin: 0;
     }
 }
 
 @media (max-width:768px) {
     .hero {
-        padding: 10px
+        padding: 20px
     }
 
     .title {
@@ -1082,9 +1081,18 @@ h2 {
     }
 
     .icon-container {
+        display: none;
         flex-wrap: wrap;
         justify-content: center;
         padding: 5px
+    }
+
+    .footer{
+        display: flex;
+        margin: 20px;
+        font-size: .9rem;
+        color: #666;
+        justify-content: center;
     }
 }
 
