@@ -892,6 +892,82 @@ h2 {
     bottom: 50px
 }
 
+.social-share-container {
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 20px;
+    z-index: 1000;
+}
+
+.social-share-card {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    backdrop-filter: blur(8px);
+    transition: all .3s ease-in-out;
+}
+
+.social-share-card:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.social-share-container p{
+    font-size: 10px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.social-share-card img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    filter: invert(100%);
+}
+
+.social-share-card a {
+    display: contents;
+}
+
+.social-share-card::after {
+    content: attr(data-title);
+    position: absolute;
+    top: 20%;
+    left: 110%;
+    transform: translateX(-50%);
+    background: linear-gradient(135deg, rgba(109, 35, 182, 0.8), rgba(41, 4, 75, 0.8));
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease-in-out;
+    white-space: nowrap;
+}
+
+.social-share-card:hover::after {
+    opacity: 1;
+    visibility: visible;
+    left: 300%;
+}
+
 .footer {
     display: flex;
     margin: 40px;
@@ -979,6 +1055,10 @@ h2 {
 
     .description h2 {
         font-size: 1.5rem
+    }
+
+    .social-share-container {
+        display: none;
     }
 }
 
