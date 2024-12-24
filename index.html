@@ -7,6 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
 
+    <!-- Enable caching for the page with a max-age of 3600 seconds (1 hour) -->
+    <meta http-equiv="Cache-Control" content="public, max-age=3600">
+    <meta http-equiv="Pragma" content="cache">
+    <meta http-equiv="Expires" content="Tue, 20 Apr 2024 20:00:00 GMT">
+
+    <!-- Proper cache control for pages to cache them for a limited time -->
+    <meta http-equiv="Cache-Control" content="private, max-age=3600">
+
     <!-- SEO Meta Tags -->
     <title>Ayush - Innovative Android Developer | Mobile App Solutions</title>
     <meta name="description"
@@ -153,7 +161,7 @@
     <!-- Download CV -->
     <div class="cv-download">
         <div class="cv-container">
-            <button class="cv-button"><a href="Images/Resume.pdf" download="Ayush-Resume.pdf">Download CV</a></button>
+            <a href="Images/Resume.pdf" download="Ayush-Resume.pdf"><button class="cv-button">Download CV</button></a>
         </div>
     </div>
 
