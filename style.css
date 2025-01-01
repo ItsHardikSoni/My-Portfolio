@@ -520,6 +520,55 @@ h1 {
     background: #6a1b9a
 }
 
+/* Service Section Styles */
+.service-section {
+    padding: 20px 10px;
+}
+
+.service-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.service-icon {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
 .main-container {
     text-align: center;
     position: relative;
@@ -932,7 +981,7 @@ h1 {
     transform: scale(1.1);
 }
 
-.social-share-container p{
+.social-share-container p {
     font-size: 10px;
     font-style: italic;
     font-weight: bold;
@@ -998,6 +1047,7 @@ h1 {
         margin: 0 auto;
         width: 90%
     }
+
     .card-flip {
         width: calc(33.33% - 20px);
     }
@@ -1159,6 +1209,48 @@ h1 {
         font-size: 2.5rem
     }
 
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 90%;
+        max-width: none;
+    }
+
+    .cards-container {
+        width: 100%;
+    }
+
+    .card {
+        width: 90%;
+        margin: 0 auto 20px;
+    }
+
+    .project-image,
+    .project-content {
+        width: 100%;
+    }
+
+    .tech-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .tech-icons img {
+        margin: 5px;
+    }
+
+    .rotating-glow-circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .centered-logo {
+        font-size: 2.5rem;
+    }
+
     .subtitle {
         font-size: 1rem
     }
@@ -1187,7 +1279,7 @@ h1 {
         padding: 5px
     }
 
-    .footer{
+    .footer {
         display: flex;
         margin: 20px;
         font-size: .9rem;
@@ -1203,6 +1295,36 @@ h1 {
 
     .subtitle {
         font-size: .9rem
+    }
+
+    .main-title {
+        font-size: 1.8rem;
+    }
+
+    .title-subtext {
+        font-size: 0.9rem;
+    }
+
+    .card-social {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Btn {
+        margin: 5px;
+    }
+
+    .project-title {
+        font-size: 1.3rem;
+    }
+
+    .project-description {
+        font-size: 0.9rem;
+    }
+
+    .tool-icons img {
+        width: 25px;
+        height: 25px;
     }
 
     .description h2 {
