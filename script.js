@@ -73,3 +73,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+document.addEventListener('contextmenu', function (e) {
+  e.preventDefault();
+});
+
+document.addEventListener('keydown', function (e) {
+  if ((e.ctrlKey || e.metaKey) && e.key === 'c') {
+    e.preventDefault();
+    alert("Copying text is disabled on this portfolio!");
+  }
+});
+
+// Prevent text selection programmatically
+document.addEventListener('selectstart', function (e) {
+  e.preventDefault(); // Disable selection start
+});
+
+// Optional: Prevent double-tap selection on mobile devices
+document.addEventListener('touchstart', function (e) {
+  if (e.touches.length > 1) {
+    e.preventDefault(); // Disable multi-touch interactions
+  }
+});
